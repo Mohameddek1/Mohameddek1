@@ -1,34 +1,42 @@
-# Hi, I'm [Your Name] 👋
+# Hi, I'm Mohameddeq 👋
 
 Welcome to my GitHub profile! I’m a passionate developer working on exciting projects. Here’s a bit more about me:
 
-## 🚀 About Me
-- 🔭 I’m currently working on [project name]
-- 🌱 I’m currently learning [technologies or skills]
-- 👯 I’m looking to collaborate on [specific projects or tech stack]
-- 🤔 I’m looking for help with [something you're seeking help for]
-- 💬 Ask me about [topics you're comfortable talking about]
-- 📫 How to reach me: [contact details or social links]
-- 😄 Pronouns: [your pronouns]
-- ⚡ Fun fact: [something fun or unique about you]
+# Welcome to My GitHub Profile!
 
-## 🛠️ Technologies & Tools
-Here’s a list of technologies I work with:
+## Cybersecurity Enthusiast 💻🔐
 
-- Frontend: React, Vue, Angular, HTML5, CSS3, JavaScript
-- Backend: Node.js, Express, Python, Django
-- Database: MySQL, MongoDB, PostgreSQL
-- Tools: Git, Docker, AWS, Kubernetes
-- Others: [List any other relevant tools, frameworks, or libraries]
+I specialize in various areas of cybersecurity with hands-on experience in:
 
-## 📈 GitHub Stats
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_title=true&count_private=true)
+- **Web Exploitation**  
+  ![Web Exploitation Icon](https://img.icons8.com/ios/50/000000/exploit.png)
+- **Binary Exploitation**  
+  ![Binary Exploitation Icon](https://img.icons8.com/ios/50/000000/binary-code.png)
+- **Privilege Escalation**  
+  ![Privilege Escalation Icon](https://img.icons8.com/ios/50/000000/lock.png)
+- **Networking**  
+  ![Networking Icon](https://img.icons8.com/ios/50/000000/network.png)
 
-## 🌱 Current Projects
-- [Project 1](link-to-project): Description of the project.
-- [Project 2](link-to-project): Description of the project.
+I actively practice and challenge myself on platforms such as **[HackTheBox](https://www.hackthebox.eu/)** and **[TryHackMe](https://tryhackme.com/)** to improve and sharpen my skills.
 
-## 🔗 Connect with Me
-- [LinkedIn](https://www.linkedin.com/in/your-linkedin)
-- [Twitter](https://twitter.com/your-twitter)
-- [Personal Website](https://your-website.com)
+---
+
+## Web Development 🖥️
+
+In the world of web development, I'm skilled in:
+
+- **Frontend Development:**  
+  - **React** ⚛️ for building dynamic user interfaces.  
+    ![React Icon](https://img.icons8.com/ios/50/000000/react-native.png)
+  - **Tailwind CSS** 🌿 & **Bootstrap** ⚙️ for modern, responsive design.  
+    ![Tailwind CSS Icon](https://img.icons8.com/ios/50/000000/tailwind-css.png)  
+    ![Bootstrap Icon](https://img.icons8.com/ios/50/000000/bootstrap.png)
+
+- **Backend Development:**  
+  - **Django** 🐍 & **Flask** 🦸‍♂️ for building secure, scalable web applications.  
+    ![Django Icon](https://img.icons8.com/ios/50/000000/django.png)  
+    ![Flask Icon](https://img.icons8.com/ios/50/000000/flask.png)
+
+---
+
+Feel free to browse through my repositories and projects, and don't hesitate to reach out for any collaboration opportunities or questions!
