@@ -1,6 +1,6 @@
 # Hi, I'm Mohameddeq 👋
 
-Welcome to my GitHub profile! I'm a passionate developer and cybersecurity enthusiast. Here's a bit more about me:
+Welcome to my GitHub profile! I'm a passionate **developer** and **cybersecurity enthusiast**. Here's a bit more about me:
 
 ---
 
@@ -9,16 +9,16 @@ Welcome to my GitHub profile! I'm a passionate developer and cybersecurity enthu
 I specialize in various areas of cybersecurity, with hands-on experience in:
 
 ### 🔍 Web Exploitation  
-![Web Exploitation Icon](https://img.icons8.com/ios/50/ffffff/exploit.png)
+![Web Exploitation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/exploit.png)
 
 ### 🧩 Binary Exploitation  
-![Binary Exploitation Icon](https://img.icons8.com/ios/50/ffffff/binary-code.png)
+![Binary Exploitation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/binary-code.png)
 
 ### 🔓 Privilege Escalation  
-![Privilege Escalation Icon](https://img.icons8.com/ios/50/ffffff/lock.png)
+![Privilege Escalation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/lock.png)
 
 ### 🌐 Networking  
-![Networking Icon](https://img.icons8.com/ios/50/ffffff/network.png)
+![Networking Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/network.png)
 
 I actively practice and challenge myself on platforms like:
 - [**HackTheBox**](https://www.hackthebox.eu/)
@@ -33,17 +33,18 @@ In the world of web development, I have experience with both **Frontend** and **
 ### Frontend Development 🌿
 
 - **React** ⚛️ for building dynamic user interfaces  
-  ![React Icon](https://img.icons8.com/ios/50/ffffff/react-native.png)
+  ![React Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/react-native.png)
 - **Tailwind CSS** 🌿 & **Bootstrap** ⚙️ for modern, responsive design  
-  ![Tailwind CSS Icon](https://img.icons8.com/ios/50/ffffff/tailwind-css.png)  
-  ![Bootstrap Icon](https://img.icons8.com/ios/50/ffffff/bootstrap.png)
+  ![Tailwind CSS Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/tailwind-css.png)  
+  ![Bootstrap Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/bootstrap.png)
 
 ### Backend Development 🐍
 
 - **Django** 🐍 for building secure, scalable web applications  
-  ![Django Icon](https://img.icons8.com/ios/50/ffffff/django.png)
+  ![Django Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/django.png)
 - **Flask** 🦸‍♂️ for lightweight backend development  
-  ![Flask Icon](https://img.icons8.com/ios/50/ffffff/flask.png)
+  ![Flask Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/flask.png)
 
 ---
 
+Feel free to explore my repositories and connect with me!
