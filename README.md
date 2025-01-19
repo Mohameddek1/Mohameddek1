@@ -9,16 +9,16 @@ Welcome to my GitHub profile! I'm a passionate **developer** and **cybersecurity
 I specialize in various areas of cybersecurity, with hands-on experience in:
 
 ### 🔍 Web Exploitation  
-<img src="https://img.icons8.com/ios/50/ffffff/exploit.png" width="25" height="25"/>
+![Web Exploitation](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176612f6a6176612d6f726967696e616c2e737667)
 
 ### 🧩 Binary Exploitation  
-<img src="https://img.icons8.com/ios/50/ffffff/binary-code.png" width="25" height="25"/>
+![Binary Exploitation](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f62696e6172792f62696e6172792d636f64652e737667)
 
 ### 🔓 Privilege Escalation  
-<img src="https://img.icons8.com/ios/50/ffffff/lock.png" width="25" height="25"/>
+![Privilege Escalation](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6c6f636b2e737667)
 
 ### 🌐 Networking  
-<img src="https://img.icons8.com/ios/50/ffffff/network.png" width="25" height="25"/>
+![Networking](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6e6574776f726b2e737667)
 
 I actively practice and challenge myself on platforms like:
 - [**HackTheBox**](https://www.hackthebox.eu/)
@@ -33,16 +33,16 @@ In the world of web development, I have experience with both **Frontend** and **
 ### Frontend Development 🌿
 
 - **React** ⚛️ for building dynamic user interfaces  
-  <img src="https://img.icons8.com/ios/50/ffffff/react-native.png" width="25" height="25"/>
+  ![React](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742e737667)
 - **Tailwind CSS** 🌿 & **Bootstrap** ⚙️ for modern, responsive design  
-  <img src="https://img.icons8.com/ios/50/ffffff/tailwind-css.png" width="25" height="25"/>  
-  <img src="https://img.icons8.com/ios/50/ffffff/bootstrap.png" width="25" height="25"/>
+  ![Tailwind CSS](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f7461696c77696e6363732e737667)  
+  ![Bootstrap](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f626f6f7473747261702e737667)
 
 ### Backend Development 🐍
 
 - **Django** 🐍 for building secure, scalable web applications  
-  <img src="https://img.icons8.com/ios/50/ffffff/django.png" width="25" height="25"/>
+  ![Django](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f646a616e676f2e737667)
 - **Flask** 🦸‍♂️ for lightweight backend development  
-  <img src="https://img.icons8.com/ios/50/ffffff/flask.png" width="25" height="25"/>
+  ![Flask](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f666c61736b2e737667)
 
 ---
