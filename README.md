@@ -9,16 +9,16 @@ Welcome to my GitHub profile! I'm a passionate **developer** and **cybersecurity
 I specialize in various areas of cybersecurity, with hands-on experience in:
 
 ### 🔍 Web Exploitation  
-![Web Exploitation]([https://icons8.com/icon/5503/hacking](https://icons8.com/icons/set/hacking))
+![Web Exploitation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/exploit.png)
 
 ### 🧩 Binary Exploitation  
-![Binary Exploitation](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f62696e6172792f62696e6172792d636f64652e737667)
+![Binary Exploitation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/binary-code.png)
 
 ### 🔓 Privilege Escalation  
-![Privilege Escalation](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6c6f636b2e737667)
+![Privilege Escalation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/lock.png)
 
 ### 🌐 Networking  
-![Networking](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6e6574776f726b2e737667)
+![Networking Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/network.png)
 
 I actively practice and challenge myself on platforms like:
 - [**HackTheBox**](https://www.hackthebox.eu/)
@@ -33,16 +33,18 @@ In the world of web development, I have experience with both **Frontend** and **
 ### Frontend Development 🌿
 
 - **React** ⚛️ for building dynamic user interfaces  
-  ![React](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742e737667)
+  ![React Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/react-native.png)
 - **Tailwind CSS** 🌿 & **Bootstrap** ⚙️ for modern, responsive design  
-  ![Tailwind CSS](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f7461696c77696e6363732e737667)  
-  ![Bootstrap](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f626f6f7473747261702e737667)
+  ![Tailwind CSS Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/tailwind-css.png)  
+  ![Bootstrap Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/bootstrap.png)
 
 ### Backend Development 🐍
 
 - **Django** 🐍 for building secure, scalable web applications  
-  ![Django](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f646a616e676f2e737667)
+  ![Django Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/django.png)
 - **Flask** 🦸‍♂️ for lightweight backend development  
-  ![Flask](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f666c61736b2e737667)
+  ![Flask Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/flask.png)
 
 ---
+
+Feel free to explore my repositories and connect with me!
