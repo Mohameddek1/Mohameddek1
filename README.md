@@ -9,7 +9,7 @@ Welcome to my GitHub profile! I'm a passionate **developer** and **cybersecurity
 I specialize in various areas of cybersecurity, with hands-on experience in:
 
 ### 🔍 Web Exploitation  
-![Web Exploitation Icon]([https://img.icons8.com/external-flat-juicy-fish/50/ffffff/hacker](https://img.icons8.com/?size=100&id=5503&format=png&color=000000))
+![Web Exploitation Icon]([[https://img.icons8.com/external-flat-juicy-fish/50/ffffff/hacker](https://img.icons8.com/?size=100&id=5503&format=png&color=000000)](https://img.icons8.com/?size=100&id=5503&format=png&color=000000))
 
 ### 🧩 Binary Exploitation  
 ![Binary Exploitation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/binary-code.png)
