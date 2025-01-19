@@ -12,7 +12,8 @@ I specialize in various areas of cybersecurity, with hands-on experience in:
 Exploring vulnerabilities and exploiting weaknesses in web applications.
 
 ### 🧩 **Binary Exploitation**  
-[![Binary Exploitation Icon](https://img.icons8.com/ios-filled/50/FF5733/binary-code.png)](https://fontawesome.com/icons/cogs?f=classic)  
+[![Binary Exploitation Icon](
+[https://img.icons8.com/?size=100&id=19293&format=png&color=000000](https://img.icons8.com/?size=100&id=19293&format=png&color=000000))](https://fontawesome.com/icons/cogs?f=classic)  
 Delving into low-level binary vulnerabilities for system compromise.
 
 ### 🔓 **Privilege Escalation**  
