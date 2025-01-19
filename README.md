@@ -9,16 +9,16 @@ Welcome to my GitHub profile! I'm a passionate **developer** and **cybersecurity
 I specialize in various areas of cybersecurity, with hands-on experience in:
 
 ### 🔍 Web Exploitation  
-![Web Exploitation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/exploit.png)
+![Web Exploitation Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/exploit.svg)
 
 ### 🧩 Binary Exploitation  
-![Binary Exploitation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/binary-code.png)
+![Binary Exploitation Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/binarycode.svg)
 
 ### 🔓 Privilege Escalation  
-![Privilege Escalation Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/lock.png)
+![Privilege Escalation Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/lock.svg)
 
 ### 🌐 Networking  
-![Networking Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/network.png)
+![Networking Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/network.svg)
 
 I actively practice and challenge myself on platforms like:
 - [**HackTheBox**](https://www.hackthebox.eu/)
@@ -33,17 +33,17 @@ In the world of web development, I have experience with both **Frontend** and **
 ### Frontend Development 🌿
 
 - **React** ⚛️ for building dynamic user interfaces  
-  ![React Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/react-native.png)
+  ![React Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/react.svg)
 - **Tailwind CSS** 🌿 & **Bootstrap** ⚙️ for modern, responsive design  
-  ![Tailwind CSS Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/tailwind-css.png)  
-  ![Bootstrap Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/bootstrap.png)
+  ![Tailwind CSS Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/tailwindcss.svg)  
+  ![Bootstrap Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/bootstrap.svg)
 
 ### Backend Development 🐍
 
 - **Django** 🐍 for building secure, scalable web applications  
-  ![Django Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/django.png)
+  ![Django Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/django.svg)
 - **Flask** 🦸‍♂️ for lightweight backend development  
-  ![Flask Icon](https://img.icons8.com/external-flat-juicy-fish/50/ffffff/flask.png)
+  ![Flask Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/flask.svg)
 
 ---
 
