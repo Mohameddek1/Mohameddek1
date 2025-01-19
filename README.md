@@ -16,7 +16,7 @@ Exploring vulnerabilities and exploiting weaknesses in web applications.
 Delving into low-level binary vulnerabilities for system compromise.
 
 ### 🔓 **Privilege Escalation**  
-[![Privilege Escalation Icon](https://img.icons8.com/ios-filled/50/FF5733/lock.png)](https://fontawesome.com/icons/lock?f=classic)  
+[![Privilege Escalation Icon]([https://img.icons8.com/ios-filled/50/FF5733/lock.png](https://img.icons8.com/?size=100&id=37792&format=png&color=000000))](https://fontawesome.com/icons/lock?f=classic)  
 Escalating user privileges to gain unauthorized access.
 
 ### 🌐 **Networking**  
@@ -56,12 +56,7 @@ In the world of web development, I have experience with both **Frontend** and **
   ![Flask Icon](https://img.icons8.com/ios-filled/50/FF5733/flask.png)  
   Lightweight framework for fast backend development.
 
----
 
-## 📫 Contact Me
-
-Feel free to explore my repositories and connect with me!  
-You can reach me at: [mohameddeq@example.com](mailto:mohameddeq@example.com)
 
 ---
 
