@@ -9,16 +9,16 @@ Welcome to my GitHub profile! I'm a passionate **developer** and **cybersecurity
 I specialize in various areas of cybersecurity, with hands-on experience in:
 
 ### 🔍 Web Exploitation  
-![Web Exploitation Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/exploit.svg)
+<img src="https://img.icons8.com/ios/50/ffffff/exploit.png" width="25" height="25"/>
 
 ### 🧩 Binary Exploitation  
-![Binary Exploitation Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/binarycode.svg)
+<img src="https://img.icons8.com/ios/50/ffffff/binary-code.png" width="25" height="25"/>
 
 ### 🔓 Privilege Escalation  
-![Privilege Escalation Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/lock.svg)
+<img src="https://img.icons8.com/ios/50/ffffff/lock.png" width="25" height="25"/>
 
 ### 🌐 Networking  
-![Networking Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/network.svg)
+<img src="https://img.icons8.com/ios/50/ffffff/network.png" width="25" height="25"/>
 
 I actively practice and challenge myself on platforms like:
 - [**HackTheBox**](https://www.hackthebox.eu/)
@@ -33,18 +33,16 @@ In the world of web development, I have experience with both **Frontend** and **
 ### Frontend Development 🌿
 
 - **React** ⚛️ for building dynamic user interfaces  
-  ![React Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/react.svg)
+  <img src="https://img.icons8.com/ios/50/ffffff/react-native.png" width="25" height="25"/>
 - **Tailwind CSS** 🌿 & **Bootstrap** ⚙️ for modern, responsive design  
-  ![Tailwind CSS Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/tailwindcss.svg)  
-  ![Bootstrap Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/bootstrap.svg)
+  <img src="https://img.icons8.com/ios/50/ffffff/tailwind-css.png" width="25" height="25"/>  
+  <img src="https://img.icons8.com/ios/50/ffffff/bootstrap.png" width="25" height="25"/>
 
 ### Backend Development 🐍
 
 - **Django** 🐍 for building secure, scalable web applications  
-  ![Django Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/django.svg)
+  <img src="https://img.icons8.com/ios/50/ffffff/django.png" width="25" height="25"/>
 - **Flask** 🦸‍♂️ for lightweight backend development  
-  ![Flask Icon](https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/flask.svg)
+  <img src="https://img.icons8.com/ios/50/ffffff/flask.png" width="25" height="25"/>
 
 ---
-
-Feel free to explore my repositories and connect with me!
