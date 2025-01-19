@@ -9,7 +9,7 @@ Welcome to my GitHub profile! I'm a passionate **developer** and **cybersecurity
 I specialize in various areas of cybersecurity, with hands-on experience in:
 
 ### 🔍 Web Exploitation  
-![Web Exploitation](https://icons8.com/icon/5503/hacking)
+![Web Exploitation]([https://icons8.com/icon/5503/hacking](https://icons8.com/icons/set/hacking))
 
 ### 🧩 Binary Exploitation  
 ![Binary Exploitation](https://camo.githubusercontent.com/0d4b500c99671bf83bcb747e4f25f3da28765f2bbb4cdd9733c09f9a46381aaa/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f62696e6172792f62696e6172792d636f64652e737667)
