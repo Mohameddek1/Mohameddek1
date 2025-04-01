@@ -1,64 +1,54 @@
-# Hi, I'm Mohameddeq 👋  
-Welcome to my GitHub profile! I'm a passionate **developer** and **cybersecurity enthusiast**. Here's a bit more about me:
+# Hi, I'm Mohameddeq 👋 
+[![Cybersecurity Enthusiast](https://img.shields.io/badge/-Cybersecurity%20Enthusiast-2d2d2d?style=flat&logo=gnuprivacyguard&logoColor=white)](https://github.com/Mohameddeq)
+[![Full Stack Developer](https://img.shields.io/badge/-Full%20Stack%20Developer-2d2d2d?style=flat&logo=fullstack&logoColor=white)](https://github.com/Mohameddeq)
+[![HackTheBox Player](https://img.shields.io/badge/HackTheBox-Player-9cf?style=flat&logo=hackthebox&logoColor=white)](https://www.hackthebox.eu/)
+[![TryHackMe Learner](https://img.shields.io/badge/TryHackMe-Learner-FF6D00?style=flat&logo=tryhackme&logoColor=white)](https://tryhackme.com/)
 
----
+Welcome to my cybersecurity playground and development workshop! I specialize in breaking things to make them stronger while building robust web applications. 🛠️💻
 
-## 🛡️ Cybersecurity Enthusiast
+<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300" alt="Coding gif">
 
-I specialize in various areas of cybersecurity, with hands-on experience in:
+## 🔐 Cybersecurity Arsenal
 
-### 🔍 **Web Exploitation**  
-[![Web Exploitation Icon](https://img.icons8.com/ios-filled/50/FF5733/hacker.png)](https://fontawesome.com/icons/hacker?f=classic)  
-Exploring vulnerabilities and exploiting weaknesses in web applications.
+### **Core Competencies**
+- 🕵️ **Web Exploitation**: Hunting vulnerabilities in web applications
+- ⚙️ **Binary Exploitation**: Reverse engineering and memory corruption attacks
+- 🔑 **Privilege Escalation**: Vertical & horizontal escalation techniques
+- 🌐 **Network Security**: Protocol analysis and intrusion detection
 
-### 🧩 **Binary Exploitation**  
-[![Binary Exploitation Icon](
-[https://img.icons8.com/?size=100&id=19293&format=png&color=000000](https://img.icons8.com/?size=100&id=19293&format=png&color=000000))](https://fontawesome.com/icons/cogs?f=classic)  
-Delving into low-level binary vulnerabilities for system compromise.
+### **Active Platforms**
+[![HackTheBox](https://img.shields.io/badge/HackTheBox-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00)](https://www.hackthebox.eu/)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/)
 
-### 🔓 **Privilege Escalation**  
-[![Privilege Escalation Icon]([https://img.icons8.com/ios-filled/50/FF5733/lock.png](https://img.icons8.com/?size=100&id=37792&format=png&color=000000))](https://fontawesome.com/icons/lock?f=classic)  
-Escalating user privileges to gain unauthorized access.
+## 💻 Full Stack Development
 
-### 🌐 **Networking**  
-[![Networking Icon](https://img.icons8.com/ios-filled/50/FF5733/network.png)](https://fontawesome.com/icons/wifi?f=classic)  
-Understanding and exploiting network protocols for security testing.
+### **Frontend Craft**
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-I actively practice and challenge myself on platforms like:  
-- [**HackTheBox**](https://www.hackthebox.eu/)  
-- [**TryHackMe**](https://tryhackme.com/)
+### **Backend Engineering**
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
----
+## 🛠️ Technologies & Tools
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-## 💻 Web Development Skills
+## 📈 GitHub Stats
+![GitHub Streak](https://streak-stats.demolab.com?user=Mohameddeq&theme=dark&hide_border=true&date_format=j%20M%5B%20Y%5D)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mohameddeq&layout=compact&theme=dark&hide_border=true)
 
-In the world of web development, I have experience with both **Frontend** and **Backend** development:
+## 🌐 Let's Connect
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/mohameddeq-abdi-a08a18262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohadek2004@gmail.com)
 
-### 🌿 **Frontend Development**  
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Mohameddeq&color=blueviolet" alt="Profile views">
+</p>
 
-- **React** ⚛️  
-  ![React Icon](https://img.icons8.com/ios-filled/50/FF5733/react-native.png)  
-  Building dynamic and interactive user interfaces.
-
-- **Tailwind CSS** 🌿 & **Bootstrap** ⚙️  
-  ![Tailwind CSS Icon](https://img.icons8.com/ios-filled/50/FF5733/tailwind-css.png)  
-  ![Bootstrap Icon](https://img.icons8.com/ios-filled/50/FF5733/bootstrap.png)  
-  Crafting responsive and modern UI designs.
-
----
-
-### 🐍 **Backend Development**  
-
-- **Django** 🐍  
-  ![Django Icon](https://img.icons8.com/ios-filled/50/FF5733/django.png)  
-  Building secure, scalable web applications.
-
-- **Flask** 🦸‍♂️  
-  ![Flask Icon](https://img.icons8.com/ios-filled/50/FF5733/flask.png)  
-  Lightweight framework for fast backend development.
-
-
-
----
-
-Thanks for visiting my profile! Feel free to explore, and don’t hesitate to reach out if you’d like to collaborate or have any questions. 😊
+> "In cybersecurity, the only safe system is one that's powered off, cast in a block of concrete, and sealed in a lead-lined room... and even then, I have my doubts." - Gene Spafford
