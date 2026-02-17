@@ -1,22 +1,21 @@
 <div align="center">
 
 ```
-███╗   ███╗ ██████╗ ██╗  ██╗ █████╗ ███╗   ███╗███████╗██████╗ ██████╗ ███████╗ ██████╗
-████╗ ████║██╔═══██╗██║  ██║██╔══██╗████╗ ████║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔═══██╗
-██╔████╔██║██║   ██║███████║███████║██╔████╔██║█████╗  ██║  ██║██║  ██║█████╗  ██║   ██║
-██║╚██╔╝██║██║   ██║██╔══██║██╔══██║██║╚██╔╝██║██╔══╝  ██║  ██║██║  ██║██╔══╝  ██║▄▄ ██║
-██║ ╚═╝ ██║╚██████╔╝██║  ██║██║  ██║██║ ╚═╝ ██║███████╗██████╔╝██████╔╝███████╗╚██████╔╝
-╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═════╝ ╚═════╝ ╚══════╝ ╚══▀▀═╝
+██████╗  █████╗  ██████╗██╗  ██╗███████╗███╗   ██╗██████╗     
+██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝████╗  ██║██╔══██╗    
+██████╔╝███████║██║     █████╔╝ █████╗  ██╔██╗ ██║██║  ██║    
+██╔══██╗██╔══██║██║     ██╔═██╗ ██╔══╝  ██║╚██╗██║██║  ██║    
+██████╔╝██║  ██║╚██████╗██║  ██╗███████╗██║ ╚████║██████╔╝    
+╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝    
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&pause=1200&color=00FF41&center=true&vCenter=true&width=580&lines=Backend+Developer+%7C+Django+%26+Flask;Security+Engineer+%7C+SOC+%26+Network+Security;1%2C176+Total+Contributions+%26+Counting;Building+things.+Breaking+things.+Securing+things." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Backend+Developer+%7C+Django+%26+Flask;SOC+%26+Network+Security+Engineer;1%2C176+Contributions+%7C+34%2B+Repos;Break+it.+Understand+it.+Secure+it." alt="Typing SVG"/>
 
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohameddeq-abdi-a08a18262)
 [![Email](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohadek2004@gmail.com)
-[![GitHub @Mohameddek1](https://img.shields.io/badge/GitHub-Mohameddek1-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohameddek1)
-[![GitHub @Mohameddeq](https://img.shields.io/badge/GitHub-Mohameddeq-444444?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohameddeq)
+[![GitHub](https://img.shields.io/badge/@Mohameddek1-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohameddek1)
 [![HackTheBox](https://img.shields.io/badge/HackTheBox-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/)
 
@@ -26,102 +25,70 @@
 
 ---
 
-## `$ whoami`
-
 ```python
 class Mohameddeq:
-    name       = "Mohameddeq Abdi"
-    email      = "mohadek2004@gmail.com"
-    github     = ["@Mohameddek1 (primary)", "@Mohameddeq"]
-    primary    = ["Backend Developer", "Security Engineer"]
+    name    = "Mohameddeq Abdi"
+    email   = "mohadek2004@gmail.com"
+    primary = ["Backend Developer", "Security Engineer"]
 
-    backend    = {
-        "frameworks" : ["Django", "Django REST Framework", "Flask"],
-        "languages"  : ["Python", "JavaScript"],
-        "databases"  : ["PostgreSQL", "Redis", "SQLite"],
-        "extras"     : ["Celery", "JWT Auth", "REST APIs", "Docker"],
-    }
-    security   = {
-        "focus"  : ["SOC Operations", "Network Security", "Threat Hunting"],
-        "siem"   : ["Splunk", "Elastic Stack", "Wazuh", "Graylog"],
-        "network": ["Wireshark", "Zeek", "Suricata", "Snort", "Nmap"],
-        "offense": ["Burp Suite", "Metasploit", "Nessus", "OpenVAS"],
-        "ctf"    : ["HackTheBox", "TryHackMe"],
-    }
-    devops     = ["Docker", "Kubernetes", "Terraform", "Ansible", "GitHub Actions"]
-    mindset    = "Break it to understand it. Understand it to secure it."
+    backend  = { "stack": ["Python", "Django", "DRF", "Flask", "Celery"],
+                 "db":    ["PostgreSQL", "Redis", "SQLite"],
+                 "ships": ["REST APIs", "JWT Auth", "Async Workers", "OWASP-aware code"] }
+
+    security = { "blue":  ["Splunk", "Elastic SIEM", "Wazuh", "TheHive", "Graylog"],
+                 "net":   ["Wireshark", "Zeek", "Suricata", "Snort", "Nmap"],
+                 "red":   ["Burp Suite", "Metasploit", "Nessus", "OpenVAS"],
+                 "ctf":   ["HackTheBox", "TryHackMe"] }
+
+    devops   = ["Docker", "Kubernetes", "Terraform", "Ansible", "GitHub Actions"]
+    stats    = { "contributions": 1176, "repos": 34, "since": "Sep 2021" }
+    mindset  = "Break it to understand it. Understand it to secure it."
 ```
 
 ---
 
 ## ⚙️ Backend Development
 
-> I build secure, scalable APIs and web applications with Python — shipping production-ready backends that handle auth, async tasks, and real-world load.
+> Production-ready Python backends — secure by design, scalable by default.
 
 <div align="center">
 
-### Core Frameworks
-
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![DRF](https://img.shields.io/badge/Django_REST_Framework-ff1709?style=for-the-badge&logo=django&logoColor=white)
+![DRF](https://img.shields.io/badge/Django_REST-ff1709?style=for-the-badge&logo=django&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-### Data & Async
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-
-### Frontend (when needed)
-
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 </div>
 
 <br/>
 
-### What I build with Django & Flask
+**Django** — REST APIs · JWT auth · Multi-tenant apps · Celery workers · ORM optimization · Admin dashboards
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                                                                         │
-│   Django                           Flask                                │
-│   ───────────────────────────      ──────────────────────────           │
-│   ✓ Full REST APIs with DRF        ✓ Lightweight microservices          │
-│   ✓ JWT + Session authentication   ✓ Custom security tooling            │
-│   ✓ Multi-tenant applications      ✓ Internal dashboards & APIs         │
-│   ✓ Celery background workers      ✓ Rapid prototyping                  │
-│   ✓ ORM query optimization         ✓ Webhook handlers                   │
-│   ✓ OWASP-aware secure coding      ✓ CTF challenge backends             │
-│                                                                         │
-└─────────────────────────────────────────────────────────────────────────┘
-```
+**Flask** — Microservices · Security tooling · SOC dashboards · CTF backends · Webhook handlers
 
-### Security baked into every backend
-
+**Security baked in:**
 ```
-  Input Validation   →   Sanitized inputs, parameterized queries — zero SQLi
-  Authentication     →   JWT with refresh rotation, rate limiting, 2FA-ready
-  Authorization      →   RBAC, object-level permissions, least privilege
-  Data Protection    →   bcrypt password hashing, encrypted sensitive fields
-  API Hardening      →   CORS policy, CSRF protection, secure headers
-  Logging & Auditing →   Structured logs, audit trails, anomaly alerting
+  Input Validation  →  Parameterized queries, sanitized inputs, no SQLi surface
+  Auth              →  JWT refresh rotation, rate limiting, 2FA-ready endpoints
+  Authorization     →  RBAC, object-level permissions, least privilege
+  Data              →  bcrypt hashing, encrypted fields, secrets in env only
+  API               →  CORS, CSRF, CSP + HSTS headers on every response
+  Audit             →  Structured logs, anomaly hooks, piped to SIEM
 ```
 
 ---
 
 ## 🛡️ Cybersecurity
 
-> Blue team by focus, offensive by mindset. I build detection systems and think like an attacker to understand real threat paths.
+> Blue team focus. Offensive mindset. Forensics obsession.
 
 ### 🔵 SOC & Threat Detection
-
-<div align="center">
 
 ![Splunk](https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white)
 ![Elastic](https://img.shields.io/badge/Elastic_SIEM-005571?style=for-the-badge&logo=elastic&logoColor=white)
@@ -129,18 +96,14 @@ class Mohameddeq:
 ![TheHive](https://img.shields.io/badge/TheHive-FECC00?style=for-the-badge&logo=thehive&logoColor=black)
 ![Graylog](https://img.shields.io/badge/Graylog-FF3633?style=for-the-badge&logo=graylog&logoColor=white)
 
-</div>
-
 ```
-  Splunk / Elastic   →   SPL & KQL queries, dashboards, correlation rules
-  Wazuh              →   Agent deployment, FIM, active response
-  TheHive / Cortex   →   Case management, automated enrichment workflows
-  Graylog            →   Log aggregation, stream filtering, alert pipelines
+  Splunk / Elastic  →  SPL & KQL, custom dashboards, correlation rules
+  Wazuh             →  Agent deploy, FIM, active response automation
+  TheHive / Cortex  →  Incident case management, enrichment playbooks
+  Graylog           →  Log aggregation, stream filtering, alert pipelines
 ```
 
 ### 🌐 Network Security & Forensics
-
-<div align="center">
 
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![Zeek](https://img.shields.io/badge/Zeek-2980B9?style=for-the-badge&logo=linux&logoColor=white)
@@ -149,18 +112,13 @@ class Mohameddeq:
 ![Nmap](https://img.shields.io/badge/Nmap-004170?style=for-the-badge&logo=nmap&logoColor=white)
 ![tcpdump](https://img.shields.io/badge/tcpdump-2C3E50?style=for-the-badge&logo=linux&logoColor=white)
 
-</div>
-
 ```
-  Wireshark / tcpdump  →   Deep PCAP analysis, protocol dissection, IOC extraction
-  Zeek                 →   Behavioural monitoring, custom detection scripts
-  Suricata / Snort     →   Custom IDS/IPS rules, encrypted traffic analysis
-  Nmap                 →   Network discovery, service fingerprinting
+  Wireshark / tcpdump  →  PCAP analysis, protocol dissection, IOC extraction
+  Zeek                 →  Behavioural monitoring, custom detection scripts
+  Suricata / Snort     →  Custom IDS/IPS rules, encrypted traffic analysis
 ```
 
 ### 🔴 Offensive & CTF
-
-<div align="center">
 
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=portswigger&logoColor=white)
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white)
@@ -168,9 +126,7 @@ class Mohameddeq:
 ![OpenVAS](https://img.shields.io/badge/OpenVAS-56A902?style=for-the-badge&logo=openvas&logoColor=white)
 ![Gobuster](https://img.shields.io/badge/Gobuster-222222?style=for-the-badge&logo=linux&logoColor=white)
 
-</div>
-
-| Platform | Focus |
+| Platform | Areas |
 |---|---|
 | 🟩 **HackTheBox** | Web · Binary · Network · Reversing |
 | 🔵 **TryHackMe** | SOC · Blue Team · Detection Engineering |
@@ -179,8 +135,6 @@ class Mohameddeq:
 
 ## 🚀 DevOps — Supporting the Stack
 
-<div align="center">
-
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -188,11 +142,9 @@ class Mohameddeq:
 ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
 ![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)
 
-</div>
-
 ```
-  git push  →  GitHub Actions (test + lint)  →  Docker build  →  Kubernetes + Helm
-  Terraform (provision infra)  →  Ansible (configure)  →  Wazuh (monitor)
+  git push → GitHub Actions (lint+test) → Docker Build → Kubernetes + Helm → Live
+  Terraform (infra) → Ansible (config) → Wazuh (monitor)
 ```
 
 ---
@@ -201,38 +153,35 @@ class Mohameddeq:
 
 | Category | Tools |
 |---|---|
-| 🐍 **Backend** | Python · Django · Django REST Framework · Flask · Celery |
-| 🗄️ **Databases** | PostgreSQL · Redis · SQLite |
+| 🐍 **Backend** | Python · Django · DRF · Flask · Celery · JavaScript |
+| 🗄️ **Data** | PostgreSQL · Redis · SQLite |
 | 🎨 **Frontend** | React · Tailwind CSS · Bootstrap |
-| 🛡️ **SIEM / Detection** | Splunk · Elastic Stack · Wazuh · Graylog · TheHive |
+| 🛡️ **SIEM** | Splunk · Elastic Stack · Wazuh · Graylog · TheHive |
 | 🌐 **Network** | Wireshark · Zeek · Suricata · Snort · Nmap · tcpdump |
-| ⚔️ **Offensive / VA** | Burp Suite · Metasploit · Nessus · OpenVAS · Gobuster |
+| ⚔️ **Offensive** | Burp Suite · Metasploit · Nessus · OpenVAS · Gobuster |
 | 🐳 **Containers** | Docker · Kubernetes · Helm |
 | ⚙️ **IaC** | Terraform · Ansible |
 | 🔄 **CI/CD** | GitHub Actions |
-| 🖥️ **OS / Shell** | Kali Linux · Ubuntu · Bash |
+| 🖥️ **OS** | Kali Linux · Ubuntu · Bash |
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Activity
 
 <div align="center">
 
-<!-- Real numbers from your profile — updated manually when needed -->
-![Contributions](https://img.shields.io/badge/Total%20Contributions-1%2C176-00ff41?style=for-the-badge&logo=github&logoColor=white)
-![Since](https://img.shields.io/badge/Since-Sep%209%2C%202021-222222?style=for-the-badge&logo=github&logoColor=white)
-![Longest Streak](https://img.shields.io/badge/Longest%20Streak-10%20days-00cc33?style=for-the-badge&logo=github&logoColor=white)
-![Repos](https://img.shields.io/badge/Active%20Repos-34%2B-4ade80?style=for-the-badge&logo=github&logoColor=white)
+![Contributions](https://img.shields.io/badge/Total_Contributions-1%2C176-00ff41?style=for-the-badge&logo=github&logoColor=white)
+![Since](https://img.shields.io/badge/Active_Since-Sep_2021-222?style=for-the-badge&logo=github&logoColor=white)
+![Streak](https://img.shields.io/badge/Longest_Streak-10_days-00cc33?style=for-the-badge&logo=github&logoColor=white)
+![Repos](https://img.shields.io/badge/Repositories-34+-4ade80?style=for-the-badge&logo=github&logoColor=white)
 
 <br/><br/>
 
-<!-- Activity graph — confirmed reliable service -->
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohameddek1&bg_color=0d1117&color=00ff41&line=00cc33&point=00ff41&area=true&area_color=002b00&hide_border=true&custom_title=Contribution%20Graph" alt="Contribution Graph"/>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohameddek1&bg_color=0d1117&color=00ff41&line=00cc33&point=00ff41&area=true&area_color=002200&hide_border=true&custom_title=Contribution+Graph+—+Mohameddek1" alt="Activity Graph"/>
 
-<br/><br/>
+<br/>
 
-<!-- Streak card — confirmed working in your screenshots -->
-<img src="https://streak-stats.demolab.com?user=Mohameddek1&hide_border=true&background=0D1117&ring=00ff41&fire=00cc33&currStreakLabel=00ff41&sideNums=00ff41&sideLabels=4ade80&dates=4ade80" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=Mohameddek1&hide_border=true&background=0D1117&ring=00ff41&fire=00cc33&currStreakLabel=00ff41&sideNums=00ff41&sideLabels=4ade80&dates=4ade80" alt="Streak"/>
 
 </div>
 
@@ -241,15 +190,15 @@ class Mohameddeq:
 ## 🗺️ Roadmap
 
 ```
- STATUS         GOAL                               FOCUS
-─────────────────────────────────────────────────────────────────────────
- [▓▓▓▓▓▓▓░]    Django REST API mastery            DRF advanced patterns
- [▓▓▓▓▓▓░░]    SOC Operations depth               SIEM rule tuning & IR
- [▓▓▓▓▓░░░]    Network Forensics                  Advanced PCAP & Zeek
- [▓▓▓░░░░░]    Kubernetes Security                RBAC, CKS prep
- [▓▓░░░░░░]    MITRE ATT&CK Mapping               Detection engineering
- [▓░░░░░░░]    Cloud Security                     AWS/GCP fundamentals
- [░░░░░░░░]    Certifications                     CEH · CompTIA CySA+
+ STATUS        GOAL                          PROGRESS
+───────────────────────────────────────────────────────────────────
+ [▓▓▓▓▓▓▓░]   Django REST Mastery           DRF advanced patterns
+ [▓▓▓▓▓▓░░]   SOC Operations                SIEM tuning + IR flows
+ [▓▓▓▓▓░░░]   Network Forensics             PCAP + Zeek scripting
+ [▓▓▓░░░░░]   Kubernetes Security           RBAC · CKS prep
+ [▓▓░░░░░░]   MITRE ATT&CK                  Detection engineering
+ [▓░░░░░░░]   Cloud Security                AWS/GCP · CSPM
+ [░░░░░░░░]   Certifications                CEH · CySA+ · AWS Sec
 ```
 
 ---
@@ -257,8 +206,6 @@ class Mohameddeq:
 <div align="center">
 
 *"Security is not a product, but a process — and I'm building both."*
-
-<br/>
 
 **`[ BUILD · BREAK · DETECT · REPEAT ]`**
 
