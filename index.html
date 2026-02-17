@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Mohameddeq Abdi — Backend Engineer & Security Specialist</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --g: #00ff41;
+  --g2: #00cc33;
+  --g3: rgba(0,255,65,0.07);
+  --g4: rgba(0,255,65,0.15);
+  --amber: #f5a623;
+  --red: #ff3b3b;
+  --blue: #38bdf8;
+  --bg: #030a04;
+  --bg2: #060f07;
+  --bg3: #0a1a0b;
+  --border: rgba(0,255,65,0.12);
+  --text: #a8d5a8;
+  --dim: #3d6b3d;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+::selection { background: rgba(0,255,65,0.3); color: #fff; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+/* ── NOISE TEXTURE ── */
+body::after {
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events:none;
+  z-index:9999;
+  opacity:0.4;
+}
+
+/* ── SCANLINES ── */
+body::before {
+  content:'';
+  position:fixed;
+  inset:0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 3px,
+    rgba(0,0,0,0.06) 3px, rgba(0,0,0,0.06) 4px
+  );
+  pointer-events:none;
+  z-index:9998;
+}
+
+/* ── GRID BG ── */
+.grid-bg {
+  position:fixed;
+  inset:0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity:0.4;
+  z-index:0;
+}
+
+canvas#rain {
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  opacity:0.05;
+  z-index:1;
+  pointer-events:none;
+}
+
+.wrap {
+  position:relative;
+  z-index:10;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px 80px;
+}
+
+/* ── TOPBAR ── */
+.topbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 70px;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  color: var(--dim);
+  text-transform: uppercase;
+}
+.topbar-status { display:flex; align-items:center; gap:8px; }
+.ping { width:6px; height:6px; border-radius:50%; background:var(--g); box-shadow:0 0 8px var(--g); animation: ping 2s infinite; }
+@keyframes ping { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+
+/* ── HERO ── */
+.hero {
+  display:grid;
+  grid-template-columns: 1fr 340px;
+  gap:60px;
+  align-items:start;
+  margin-bottom:90px;
+  animation: fadeUp 0.8s ease both;
+}
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+.hero-eyebrow {
+  font-size:10px;
+  letter-spacing:0.3em;
+  text-transform:uppercase;
+  color:var(--g);
+  margin-bottom:20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.hero-eyebrow::before { content:''; width:32px; height:1px; background:var(--g); }
+
+.hero-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 28px;
+  text-shadow: 0 0 60px rgba(0,255,65,0.15);
+}
+.hero-name .hi { font-size:0.35em; color:var(--g); display:block; letter-spacing:0.25em; font-family:'DM Mono',monospace; margin-bottom:8px; }
+
+.hero-roles {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:24px;
+}
+.role-tag {
+  padding:5px 14px;
+  border:1px solid var(--border);
+  font-size:10px;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  color:var(--dim);
+  border-radius:2px;
+  transition:all 0.2s;
+}
+.role-tag.active {
+  border-color:rgba(0,255,65,0.4);
+  color:var(--g);
+  background:var(--g3);
+}
+
+.hero-bio {
+  font-size:13px;
+  line-height:1.9;
+  color:#6a9d6a;
+  max-width:480px;
+  margin-bottom:32px;
+  border-left:2px solid var(--g);
+  padding-left:18px;
+}
+
+.hero-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.hlink {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:8px 18px;
+  border:1px solid var(--border);
+  font-size:10px;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  color:var(--dim);
+  text-decoration:none;
+  border-radius:2px;
+  transition:all 0.2s;
+  font-family:'DM Mono',monospace;
+}
+.hlink:hover { border-color:var(--g); color:var(--g); background:var(--g3); box-shadow:0 0 20px rgba(0,255,65,0.08); }
+.hlink svg { width:12px; height:12px; fill:currentColor; }
+
+/* Terminal card */
+.terminal {
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:6px;
+  overflow:hidden;
+  box-shadow:0 0 60px rgba(0,255,65,0.05), inset 0 1px 0 rgba(255,255,255,0.02);
+}
+.t-bar {
+  display:flex;
+  align-items:center;
+  gap:7px;
+  padding:11px 16px;
+  background:var(--bg3);
+  border-bottom:1px solid var(--border);
+}
+.t-dot { width:11px;height:11px;border-radius:50%; }
+.t-body { padding:20px; font-size:11px; line-height:2.1; font-family:'Share Tech Mono',monospace; }
+.t-prompt { color:var(--g); }
+.t-key { color:#38bdf8; }
+.t-val { color:var(--text); }
+.t-str { color:#fbbf24; }
+.t-arr { color:#c084fc; }
+.t-comment { color:var(--dim); font-size:10px; }
+.t-cursor { display:inline-block; width:8px; height:13px; background:var(--g); vertical-align:middle; animation:blink 1s step-end infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* ── SECTION ── */
+.section { margin-bottom:72px; animation: fadeUp 0.6s ease both; }
+.s-head {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:32px;
+}
+.s-num { font-size:9px; color:var(--g); letter-spacing:0.25em; white-space:nowrap; }
+.s-title { font-family:'Bebas Neue',sans-serif; font-size:2.2rem; color:#fff; letter-spacing:0.04em; }
+.s-line { flex:1; height:1px; background:var(--border); }
+.s-sub {
+  font-size:10px;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:var(--g);
+  margin-bottom:16px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.s-sub::after { content:''; flex:1; height:1px; background:var(--border); max-width:40px; }
+
+/* ── SKILL CARDS ── */
+.card-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:16px; }
+
+.card {
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:24px;
+  position:relative;
+  overflow:hidden;
+  transition:all 0.25s;
+}
+.card::before {
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:2px;
+  background:linear-gradient(90deg,var(--g),transparent);
+  opacity:0;
+  transition:opacity 0.25s;
+}
+.card:hover { border-color:rgba(0,255,65,0.3); transform:translateY(-3px); box-shadow:0 8px 40px rgba(0,0,0,0.4),0 0 20px rgba(0,255,65,0.05); }
+.card:hover::before { opacity:1; }
+
+.card-icon { font-size:22px; margin-bottom:10px; }
+.card-title { font-family:'Bebas Neue',sans-serif; font-size:1.3rem; color:#fff; letter-spacing:0.05em; margin-bottom:16px; }
+.card-desc { font-size:11px; color:#5a8a5a; line-height:1.8; margin-bottom:16px; }
+
+/* Bars */
+.bar-row { margin-bottom:9px; }
+.bar-label { display:flex; justify-content:space-between; font-size:9.5px; color:var(--dim); margin-bottom:4px; letter-spacing:0.05em; }
+.bar-track { height:2px; background:rgba(255,255,255,0.05); border-radius:1px; }
+.bar-fill { height:100%; background:linear-gradient(90deg,var(--g2),var(--g)); border-radius:1px; width:0; transition:width 1.4s cubic-bezier(0.4,0,0.2,1); box-shadow:0 0 6px rgba(0,255,65,0.5); }
+
+/* Tags */
+.tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
+.tag {
+  padding:3px 10px;
+  border:1px solid var(--border);
+  border-radius:2px;
+  font-size:9.5px;
+  letter-spacing:0.08em;
+  color:var(--dim);
+  transition:all 0.18s;
+  cursor:default;
+}
+.tag:hover { color:var(--g); border-color:rgba(0,255,65,0.3); background:var(--g3); }
+.tag.g { color:#4ade80; border-color:rgba(74,222,128,0.2); }
+.tag.b { color:var(--blue); border-color:rgba(56,189,248,0.2); }
+.tag.r { color:var(--red); border-color:rgba(255,59,59,0.2); }
+.tag.a { color:var(--amber); border-color:rgba(245,166,35,0.2); }
+
+/* ── WHAT I BUILD TABLE ── */
+.build-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
+  border-radius:4px;
+  overflow:hidden;
+  margin-bottom:24px;
+}
+.build-col { background:var(--bg2); padding:24px; }
+.build-col-title {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.1rem;
+  letter-spacing:0.08em;
+  margin-bottom:16px;
+  padding-bottom:10px;
+  border-bottom:1px solid var(--border);
+}
+.build-col-title.dj { color:#44ff88; }
+.build-col-title.fl { color:#aaaaaa; }
+.build-item {
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:11px;
+  color:#5a8a5a;
+  padding:5px 0;
+  border-bottom:1px solid rgba(0,255,65,0.04);
+  line-height:1.5;
+}
+.build-item:last-child { border-bottom:none; }
+.build-item::before { content:'✓'; color:var(--g); font-size:11px; margin-top:1px; flex-shrink:0; }
+
+/* ── SECURITY BLOCK ── */
+.sec-row {
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:12px 16px;
+  border:1px solid var(--border);
+  border-radius:3px;
+  background:var(--bg2);
+  margin-bottom:8px;
+  transition:all 0.2s;
+}
+.sec-row:hover { border-color:rgba(0,255,65,0.25); background:var(--g3); }
+.sec-arrow { color:var(--g); font-size:12px; margin-top:2px; flex-shrink:0; }
+.sec-label { font-size:11px; color:#c8f0c8; min-width:140px; letter-spacing:0.05em; }
+.sec-detail { font-size:11px; color:#4a7a4a; line-height:1.6; }
+
+/* ── TOOL GRID ── */
+.tool-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:12px; }
+.tool-group {
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:18px;
+  transition:border-color 0.2s;
+}
+.tool-group:hover { border-color:rgba(0,255,65,0.25); }
+.tg-label { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--g); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+.t-item { display:flex; align-items:center; gap:8px; font-size:11px; color:#5a8a5a; padding:4px 0; }
+.t-item::before { content:'›'; color:var(--g); }
+
+/* ── PIPELINE ── */
+.pipeline {
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:28px;
+  margin-bottom:20px;
+  font-family:'Share Tech Mono',monospace;
+}
+.pipe-row { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+.pipe-row:last-child { margin-bottom:0; }
+.pipe-label { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--dim); min-width:70px; }
+.p-node { padding:7px 14px; border:1px solid var(--border); border-radius:3px; font-size:10.5px; color:var(--text); background:rgba(0,255,65,0.03); white-space:nowrap; }
+.p-node.hi { border-color:rgba(0,255,65,0.4); color:var(--g); }
+.p-arr { color:var(--g); font-size:14px; }
+
+/* ── STATS ── */
+.stats-row { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:32px; }
+.stat-box {
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:24px 16px;
+  text-align:center;
+  transition:all 0.2s;
+}
+.stat-box:hover { border-color:rgba(0,255,65,0.4); transform:translateY(-2px); }
+.stat-n { font-family:'Bebas Neue',sans-serif; font-size:2.8rem; color:var(--g); line-height:1; text-shadow:0 0 30px rgba(0,255,65,0.4); }
+.stat-l { font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--dim); margin-top:6px; }
+
+/* ── ROADMAP ── */
+.roadmap { display:flex; flex-direction:column; gap:10px; }
+.road {
+  display:flex;
+  gap:14px;
+  align-items:center;
+  padding:14px 18px;
+  border:1px solid var(--border);
+  border-radius:3px;
+  background:var(--bg2);
+  transition:all 0.2s;
+}
+.road:hover { border-color:rgba(0,255,65,0.3); }
+.rbadge { padding:3px 10px; border-radius:2px; font-size:8.5px; letter-spacing:0.15em; text-transform:uppercase; white-space:nowrap; }
+.rb-a { background:rgba(0,255,65,0.1); color:var(--g); border:1px solid rgba(0,255,65,0.25); }
+.rb-n { background:rgba(245,166,35,0.1); color:var(--amber); border:1px solid rgba(245,166,35,0.25); }
+.rb-p { background:rgba(56,189,248,0.1); color:var(--blue); border:1px solid rgba(56,189,248,0.25); }
+.road-bar { width:80px; height:3px; background:rgba(255,255,255,0.06); border-radius:2px; flex-shrink:0; overflow:hidden; }
+.road-fill { height:100%; background:var(--g); border-radius:2px; box-shadow:0 0 6px rgba(0,255,65,0.4); }
+.road-text { font-size:12px; color:#5a8a5a; line-height:1.5; }
+.road-text strong { color:#9dc89d; font-weight:500; }
+
+/* ── FOOTER ── */
+.footer {
+  margin-top:80px;
+  padding-top:28px;
+  border-top:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+  font-size:10px;
+  color:var(--dim);
+  letter-spacing:0.12em;
+}
+.footer-right { color:var(--g); letter-spacing:0.2em; }
+.quote { text-align:center; margin:60px 0 0; font-size:13px; color:#3d6b3d; font-style:italic; line-height:1.8; }
+.quote span { color:var(--g); font-style:normal; }
+
+@media(max-width:720px){
+  .hero { grid-template-columns:1fr; }
+  .build-grid { grid-template-columns:1fr; }
+  .stats-row { grid-template-columns:repeat(2,1fr); }
+}
+</style>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<canvas id="rain"></canvas>
+
+<div class="wrap">
+
+  <!-- TOPBAR -->
+  <nav class="topbar">
+    <div class="topbar-status">
+      <span class="ping"></span>
+      <span>System Online — Backend + Security</span>
+    </div>
+    <span>Feb 2026 · Mohameddek1</span>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="hero-eyebrow">Available for opportunities</div>
+      <h1 class="hero-name">
+        <span class="hi">// Mohameddeq Abdi</span>
+        BACKEND<br/>ENGINEER &<br/>SEC<span style="color:var(--g)">.</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-tag active">Django & Flask</span>
+        <span class="role-tag active">SOC Operations</span>
+        <span class="role-tag active">Network Security</span>
+        <span class="role-tag">Kubernetes</span>
+        <span class="role-tag">CTF Player</span>
+      </div>
+      <p class="hero-bio">
+        I build production-grade Python backends and think like a security engineer from the first line of code.
+        1,176 contributions · 34+ repositories · Active on HackTheBox & TryHackMe.
+      </p>
+      <div class="hero-links">
+        <a class="hlink" href="https://www.linkedin.com/in/mohameddeq-abdi-a08a18262" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a class="hlink" href="https://github.com/Mohameddek1" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          @Mohameddek1
+        </a>
+        <a class="hlink" href="mailto:mohadek2004@gmail.com">
+          <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          Email
+        </a>
+        <a class="hlink" href="https://app.hackthebox.com/" target="_blank" style="border-color:rgba(159,239,0,0.2);color:#9FEF00">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.993 0L4 4.5V9h1.5V5.25l6.493-3.75L18.5 5.25V9H20V4.5zm-.007 7l-7.986 4.5V21l7.986 4.5L19.993 21v-9.5zm0 1.75l6.5 3.75V20.5l-6.5 3.75-6.5-3.75V12.5z"/></svg>
+          HackTheBox
+        </a>
+        <a class="hlink" href="https://tryhackme.com/" target="_blank">THM</a>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="t-bar">
+        <div class="t-dot" style="background:#ff5f57"></div>
+        <div class="t-dot" style="background:#febc2e"></div>
+        <div class="t-dot" style="background:#28c840"></div>
+        <span style="margin-left:10px;font-size:10px;color:var(--dim);font-family:'Share Tech Mono',monospace">~/whoami.py</span>
+      </div>
+      <div class="t-body">
+        <div><span class="t-prompt">class </span><span style="color:#c084fc">Engineer</span><span class="t-prompt">:</span></div>
+        <div style="padding-left:16px">
+          <div><span class="t-key">name </span><span class="t-prompt">=</span> <span class="t-str">"Mohameddeq"</span></div>
+          <div style="height:6px"></div>
+          <div class="t-comment"># backend first</div>
+          <div><span class="t-key">lang </span><span class="t-prompt">=</span> <span class="t-str">"Python"</span></div>
+          <div><span class="t-key">web  </span><span class="t-prompt">=</span> <span class="t-arr">["Django","Flask"]</span></div>
+          <div><span class="t-key">db   </span><span class="t-prompt">=</span> <span class="t-arr">["PG","Redis"]</span></div>
+          <div style="height:6px"></div>
+          <div class="t-comment"># security mindset</div>
+          <div><span class="t-key">soc  </span><span class="t-prompt">=</span> <span class="t-str">"Active"</span></div>
+          <div><span class="t-key">net  </span><span class="t-prompt">=</span> <span class="t-str">"Forensics"</span></div>
+          <div><span class="t-key">ctf  </span><span class="t-prompt">=</span> <span class="t-str">"HTB + THM"</span></div>
+          <div style="height:6px"></div>
+          <div class="t-comment"># infra support</div>
+          <div><span class="t-key">k8s  </span><span class="t-prompt">=</span> <span class="t-str">"Learning"</span></div>
+          <div><span class="t-key">iac  </span><span class="t-prompt">=</span> <span class="t-arr">["TF","Ansible"]</span></div>
+          <div style="height:8px"></div>
+          <div><span class="t-prompt">$ </span><span class="t-cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-row" style="animation:fadeUp 0.6s 0.1s ease both;opacity:0">
+    <div class="stat-box">
+      <div class="stat-n">1,176</div>
+      <div class="stat-l">Total Contributions</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-n">34+</div>
+      <div class="stat-l">Repositories</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-n">10+</div>
+      <div class="stat-l">Security Tools</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-n">4+</div>
+      <div class="stat-l">Years Coding</div>
+    </div>
+  </div>
+
+  <!-- BACKEND -->
+  <section class="section" style="animation-delay:0.15s">
+    <div class="s-head">
+      <span class="s-num">01 //</span>
+      <h2 class="s-title">Backend Development</h2>
+      <div class="s-line"></div>
+    </div>
+
+    <div class="s-sub">Core Stack</div>
+    <div class="card-grid" style="margin-bottom:28px">
+
+      <div class="card">
+        <div class="card-icon">🐍</div>
+        <div class="card-title">Python & Frameworks</div>
+        <div class="bar-row"><div class="bar-label"><span>Python</span><span>88%</span></div><div class="bar-track"><div class="bar-fill" data-w="88"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Django + DRF</span><span>82%</span></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Flask</span><span>76%</span></div><div class="bar-track"><div class="bar-fill" data-w="76"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>JavaScript</span><span>64%</span></div><div class="bar-track"><div class="bar-fill" data-w="64"></div></div></div>
+        <div class="tags">
+          <span class="tag g">REST APIs</span><span class="tag g">JWT</span><span class="tag g">Celery</span><span class="tag g">DRF</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🗄️</div>
+        <div class="card-title">Data Layer</div>
+        <div class="bar-row"><div class="bar-label"><span>PostgreSQL</span><span>82%</span></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Redis (Cache/Queue)</span><span>74%</span></div><div class="bar-track"><div class="bar-fill" data-w="74"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>SQLite</span><span>88%</span></div><div class="bar-track"><div class="bar-fill" data-w="88"></div></div></div>
+        <div class="tags">
+          <span class="tag a">ORM</span><span class="tag a">Migrations</span><span class="tag a">Indexing</span><span class="tag a">Query Opt</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <div class="card-title">Frontend Support</div>
+        <div class="bar-row"><div class="bar-label"><span>React</span><span>70%</span></div><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Tailwind CSS</span><span>76%</span></div><div class="bar-track"><div class="bar-fill" data-w="76"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Bootstrap</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="tags">
+          <span class="tag b">Templates</span><span class="tag b">Jinja2</span><span class="tag b">HTML/CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="s-sub">Django vs Flask</div>
+    <div class="build-grid">
+      <div class="build-col">
+        <div class="build-col-title dj">⬡ Django</div>
+        <div class="build-item">Full REST APIs with Django REST Framework</div>
+        <div class="build-item">JWT + Session auth, refresh token rotation</div>
+        <div class="build-item">Multi-tenant apps, custom permission systems</div>
+        <div class="build-item">Celery background workers with Redis broker</div>
+        <div class="build-item">ORM query optimization & database design</div>
+        <div class="build-item">OWASP Top 10 mitigations built-in from day 1</div>
+        <div class="build-item">Admin dashboards, audit logs, rate limiting</div>
+      </div>
+      <div class="build-col">
+        <div class="build-col-title fl">⬡ Flask</div>
+        <div class="build-item">Lightweight APIs & microservices</div>
+        <div class="build-item">Custom security tooling & automation scripts</div>
+        <div class="build-item">Internal dashboards for SOC & monitoring</div>
+        <div class="build-item">CTF challenge backends & exploit helpers</div>
+        <div class="build-item">Webhook handlers & event-driven services</div>
+        <div class="build-item">Rapid prototyping with full control</div>
+        <div class="build-item">Minimal footprint for container deployments</div>
+      </div>
+    </div>
+
+    <div class="s-sub" style="margin-top:28px">Security in every backend</div>
+    <div class="sec-row"><span class="sec-arrow">→</span><span class="sec-label">Input Validation</span><span class="sec-detail">Sanitized inputs, parameterized queries — zero SQL injection surface</span></div>
+    <div class="sec-row"><span class="sec-arrow">→</span><span class="sec-label">Authentication</span><span class="sec-detail">JWT with refresh rotation, rate limiting per endpoint, 2FA-ready</span></div>
+    <div class="sec-row"><span class="sec-arrow">→</span><span class="sec-label">Authorization</span><span class="sec-detail">RBAC, object-level permissions, principle of least privilege enforced</span></div>
+    <div class="sec-row"><span class="sec-arrow">→</span><span class="sec-label">Data Protection</span><span class="sec-detail">bcrypt hashing, encrypted PII fields, secrets in env vars only</span></div>
+    <div class="sec-row"><span class="sec-arrow">→</span><span class="sec-label">API Hardening</span><span class="sec-detail">CORS policies, CSRF protection, CSP + HSTS headers enforced</span></div>
+    <div class="sec-row"><span class="sec-arrow">→</span><span class="sec-label">Audit & Logging</span><span class="sec-detail">Structured logs, anomaly hooks, audit trails piped to SIEM</span></div>
+  </section>
+
+  <!-- CYBERSECURITY -->
+  <section class="section" style="animation-delay:0.2s">
+    <div class="s-head">
+      <span class="s-num">02 //</span>
+      <h2 class="s-title">Cybersecurity</h2>
+      <div class="s-line"></div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🔵</div>
+        <div class="card-title">SOC & Threat Detection</div>
+        <div class="bar-row"><div class="bar-label"><span>SIEM / Log Analysis</span><span>82%</span></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Alert Triage (T1/T2)</span><span>78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Incident Response</span><span>72%</span></div><div class="bar-track"><div class="bar-fill" data-w="72"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Threat Hunting</span><span>65%</span></div><div class="bar-track"><div class="bar-fill" data-w="65"></div></div></div>
+        <div class="tags">
+          <span class="tag g">Splunk</span><span class="tag g">Elastic</span><span class="tag g">Wazuh</span><span class="tag g">TheHive</span><span class="tag g">Graylog</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <div class="card-title">Network Security & Forensics</div>
+        <div class="bar-row"><div class="bar-label"><span>Packet Analysis</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>IDS/IPS Rule Writing</span><span>75%</span></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Traffic Forensics</span><span>73%</span></div><div class="bar-track"><div class="bar-fill" data-w="73"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Protocol Analysis</span><span>70%</span></div><div class="bar-track"><div class="bar-fill" data-w="70"></div></div></div>
+        <div class="tags">
+          <span class="tag b">Wireshark</span><span class="tag b">Zeek</span><span class="tag b">Suricata</span><span class="tag b">Snort</span><span class="tag b">Nmap</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔴</div>
+        <div class="card-title">Pentesting & CTF</div>
+        <div class="bar-row"><div class="bar-label"><span>Web Exploitation</span><span>78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Recon & Enumeration</span><span>76%</span></div><div class="bar-track"><div class="bar-fill" data-w="76"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Privilege Escalation</span><span>66%</span></div><div class="bar-track"><div class="bar-fill" data-w="66"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Binary / Rev Eng</span><span>54%</span></div><div class="bar-track"><div class="bar-fill" data-w="54"></div></div></div>
+        <div class="tags">
+          <span class="tag r">Burp Suite</span><span class="tag r">Metasploit</span><span class="tag r">Nessus</span><span class="tag r">OpenVAS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVOPS -->
+  <section class="section" style="animation-delay:0.25s">
+    <div class="s-head">
+      <span class="s-num">03 //</span>
+      <h2 class="s-title">DevOps — Supporting the Stack</h2>
+      <div class="s-line"></div>
+    </div>
+
+    <div class="pipeline">
+      <div class="pipe-row"><span class="pipe-label">Code</span><div class="p-node hi">git push</div><span class="p-arr">──►</span><div class="p-node hi">GitHub Actions</div><span class="p-arr">──►</span><div class="p-node">Lint + Test</div><span class="p-arr">──►</span><div class="p-node">Docker Build</div></div>
+      <div class="pipe-row"><span class="pipe-label">Deploy</span><div class="p-node">Registry Push</div><span class="p-arr">──►</span><div class="p-node hi">Helm Chart</div><span class="p-arr">──►</span><div class="p-node hi">Kubernetes</div><span class="p-arr">──►</span><div class="p-node">Live 🟢</div></div>
+      <div class="pipe-row"><span class="pipe-label">Infra</span><div class="p-node hi">Terraform</div><span class="p-arr">──►</span><div class="p-node hi">Ansible</div><span class="p-arr">──►</span><div class="p-node">Provisioned</div><span class="p-arr">──►</span><div class="p-node">Wazuh 🛡️</div></div>
+    </div>
+
+    <div class="tool-grid">
+      <div class="tool-group"><div class="tg-label">Containers</div><div class="t-item">Docker</div><div class="t-item">Docker Compose</div><div class="t-item">Container Registry</div></div>
+      <div class="tool-group"><div class="tg-label">Orchestration</div><div class="t-item">Kubernetes</div><div class="t-item">Helm Charts</div><div class="t-item">kubectl</div></div>
+      <div class="tool-group"><div class="tg-label">IaC</div><div class="t-item">Terraform</div><div class="t-item">Ansible</div><div class="t-item">Playbooks</div></div>
+      <div class="tool-group"><div class="tg-label">CI/CD</div><div class="t-item">GitHub Actions</div><div class="t-item">Workflows</div><div class="t-item">Secrets Mgmt</div></div>
+    </div>
+  </section>
+
+  <!-- FULL ARSENAL -->
+  <section class="section" style="animation-delay:0.3s">
+    <div class="s-head">
+      <span class="s-num">04 //</span>
+      <h2 class="s-title">Full Arsenal</h2>
+      <div class="s-line"></div>
+    </div>
+    <div class="tool-grid">
+      <div class="tool-group"><div class="tg-label">SIEM / Detection</div><div class="t-item">Splunk</div><div class="t-item">Elastic Stack</div><div class="t-item">Wazuh</div><div class="t-item">TheHive + Cortex</div><div class="t-item">Graylog</div></div>
+      <div class="tool-group"><div class="tg-label">Network</div><div class="t-item">Wireshark</div><div class="t-item">Zeek</div><div class="t-item">Suricata</div><div class="t-item">Snort</div><div class="t-item">Nmap · tcpdump</div></div>
+      <div class="tool-group"><div class="tg-label">Offensive / VA</div><div class="t-item">Burp Suite</div><div class="t-item">Metasploit</div><div class="t-item">Nessus</div><div class="t-item">OpenVAS</div><div class="t-item">Gobuster · Nikto</div></div>
+      <div class="tool-group"><div class="tg-label">Backend</div><div class="t-item">Python</div><div class="t-item">Django + DRF</div><div class="t-item">Flask</div><div class="t-item">Celery + Redis</div><div class="t-item">PostgreSQL</div></div>
+      <div class="tool-group"><div class="tg-label">DevOps</div><div class="t-item">Docker · K8s</div><div class="t-item">Terraform</div><div class="t-item">Ansible</div><div class="t-item">GitHub Actions</div><div class="t-item">Helm</div></div>
+      <div class="tool-group"><div class="tg-label">OS / Shell</div><div class="t-item">Kali Linux</div><div class="t-item">Ubuntu</div><div class="t-item">Bash · Zsh</div><div class="t-item">Git · VS Code</div><div class="t-item">Postman</div></div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section" style="animation-delay:0.35s">
+    <div class="s-head">
+      <span class="s-num">05 //</span>
+      <h2 class="s-title">Current Roadmap</h2>
+      <div class="s-line"></div>
+    </div>
+    <div class="roadmap">
+      <div class="road"><span class="rbadge rb-a">Active</span><div class="road-bar"><div class="road-fill" style="width:88%"></div></div><div class="road-text"><strong>Django REST API Mastery</strong> — Advanced DRF patterns, custom auth flows, API versioning</div></div>
+      <div class="road"><span class="rbadge rb-a">Active</span><div class="road-bar"><div class="road-fill" style="width:80%"></div></div><div class="road-text"><strong>SOC Operations</strong> — SIEM rule tuning, alert correlation, Tier 1/2 IR workflows</div></div>
+      <div class="road"><span class="rbadge rb-a">Active</span><div class="road-bar"><div class="road-fill" style="width:74%"></div></div><div class="road-text"><strong>Network Forensics</strong> — Advanced PCAP analysis, Zeek scripting, custom Suricata rules</div></div>
+      <div class="road"><span class="rbadge rb-n">Up Next</span><div class="road-bar"><div class="road-fill" style="width:38%"></div></div><div class="road-text"><strong>Kubernetes Security</strong> — RBAC hardening, network policies, CKS certification prep</div></div>
+      <div class="road"><span class="rbadge rb-n">Up Next</span><div class="road-bar"><div class="road-fill" style="width:28%"></div></div><div class="road-text"><strong>MITRE ATT&CK</strong> — Detection engineering, mapping rules to tactics and techniques</div></div>
+      <div class="road"><span class="rbadge rb-p">Planned</span><div class="road-bar"><div class="road-fill" style="width:14%"></div></div><div class="road-text"><strong>Cloud Security</strong> — AWS/GCP IAM, CloudTrail analysis, CSPM fundamentals</div></div>
+      <div class="road"><span class="rbadge rb-p">Planned</span><div class="road-bar"><div class="road-fill" style="width:5%"></div></div><div class="road-text"><strong>Certifications</strong> — CEH · CompTIA CySA+ · AWS Security Specialty</div></div>
+    </div>
+  </section>
+
+  <div class="quote">
+    <span>"Security is not a product, but a process —</span><br/>
+    and I'm building both."<br/>
+    <small style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-top:12px;display:block">[ BUILD · BREAK · DETECT · REPEAT ]</small>
+  </div>
+
+  <footer class="footer">
+    <span>mohadek2004@gmail.com · github.com/Mohameddek1</span>
+    <span class="footer-right">1,176 contributions · Sep 2021 → Present</span>
+  </footer>
+
+</div>
+
+<script>
+// Matrix rain
+const c = document.getElementById('rain');
+const ctx = c.getContext('2d');
+function resize(){ c.width=innerWidth; c.height=innerHeight; }
+resize();
+window.addEventListener('resize', resize);
+const cols = () => Math.floor(c.width/18);
+let drops = Array(cols()).fill(1);
+const chars = 'アイウエオカキクセキュリティ01バックエンド';
+function draw(){
+  ctx.fillStyle='rgba(3,10,4,0.06)';
+  ctx.fillRect(0,0,c.width,c.height);
+  ctx.fillStyle='#00ff41';
+  ctx.font='13px Share Tech Mono';
+  drops.forEach((y,i)=>{
+    ctx.fillText(chars[Math.floor(Math.random()*chars.length)],i*18,y*18);
+    if(y*18>c.height&&Math.random()>0.975) drops[i]=0;
+    drops[i]++;
+  });
+}
+setInterval(draw,55);
+
+// Scroll-triggered bars
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.bar-fill').forEach(b=>{
+        setTimeout(()=>{ b.style.width=b.dataset.w+'%'; },120);
+      });
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:0.15});
+document.querySelectorAll('.card').forEach(c=>io.observe(c));
+
+// Stagger card animations
+document.querySelectorAll('.section').forEach((s,i)=>{
+  s.style.animationDelay = (0.1+i*0.08)+'s';
+  s.style.opacity='0';
+  setTimeout(()=>{ s.style.animation='fadeUp 0.6s ease forwards'; },100+i*80);
+});
+document.querySelector('.stats-row').style.opacity='1';
+</script>
+</body>
+</html>
