@@ -9,7 +9,7 @@
 ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═════╝ ╚═════╝ ╚══════╝ ╚══▀▀═╝
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&pause=1200&color=00FF41&center=true&vCenter=true&width=580&lines=Backend+Developer+%7C+Django+%26+Flask;Security+Engineer+%7C+SOC+%26+Network+Security;915%2B+Contributions+in+the+Last+Year;Building+things.+Breaking+things.+Securing+things." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&pause=1200&color=00FF41&center=true&vCenter=true&width=580&lines=Backend+Developer+%7C+Django+%26+Flask;Security+Engineer+%7C+SOC+%26+Network+Security;1%2C176+Total+Contributions+%26+Counting;Building+things.+Breaking+things.+Securing+things." alt="Typing SVG" />
 
 <br/>
 
@@ -107,10 +107,10 @@ class Mohameddeq:
 ```
   Input Validation   →   Sanitized inputs, parameterized queries — zero SQLi
   Authentication     →   JWT with refresh rotation, rate limiting, 2FA-ready
-  Authorization      →   RBAC, object-level permissions, principle of least privilege
+  Authorization      →   RBAC, object-level permissions, least privilege
   Data Protection    →   bcrypt password hashing, encrypted sensitive fields
-  API Hardening      →   CORS policy, CSRF protection, secure headers (CSP, HSTS)
-  Logging & Auditing →   Structured logs, audit trails, anomaly alerting hooks
+  API Hardening      →   CORS policy, CSRF protection, secure headers
+  Logging & Auditing →   Structured logs, audit trails, anomaly alerting
 ```
 
 ---
@@ -197,28 +197,6 @@ class Mohameddeq:
 
 ---
 
-## 📊 GitHub Stats
-
-<!-- ⚠️ Stats are pulled from @Mohameddek1 — the active primary account with 915+ contributions -->
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohameddek1&bg_color=0d1117&color=00ff41&line=00cc33&point=00ff41&area=true&area_color=002b00&hide_border=true&custom_title=Contribution%20Activity%20%E2%80%94%20915%2B%20contributions%20in%20the%20last%20year" alt="Activity Graph"/>
-
-<br/><br/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Mohameddek1&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=00ff41&icon_color=00ff41&text_color=c8f0c8&ring_color=00ff41" alt="GitHub Stats"/>
-&nbsp;
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohameddek1&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=00ff41&text_color=c8f0c8" alt="Top Languages"/>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=Mohameddek1&hide_border=true&background=0D1117&ring=00ff41&fire=00cc33&currStreakLabel=00ff41&sideNums=00ff41&sideLabels=4ade80&dates=4ade80" alt="GitHub Streak"/>
-
-</div>
-
----
-
 ## 📦 Full Toolbox
 
 | Category | Tools |
@@ -233,6 +211,30 @@ class Mohameddeq:
 | ⚙️ **IaC** | Terraform · Ansible |
 | 🔄 **CI/CD** | GitHub Actions |
 | 🖥️ **OS / Shell** | Kali Linux · Ubuntu · Bash |
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<!-- Real numbers from your profile — updated manually when needed -->
+![Contributions](https://img.shields.io/badge/Total%20Contributions-1%2C176-00ff41?style=for-the-badge&logo=github&logoColor=white)
+![Since](https://img.shields.io/badge/Since-Sep%209%2C%202021-222222?style=for-the-badge&logo=github&logoColor=white)
+![Longest Streak](https://img.shields.io/badge/Longest%20Streak-10%20days-00cc33?style=for-the-badge&logo=github&logoColor=white)
+![Repos](https://img.shields.io/badge/Active%20Repos-34%2B-4ade80?style=for-the-badge&logo=github&logoColor=white)
+
+<br/><br/>
+
+<!-- Activity graph — confirmed reliable service -->
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohameddek1&bg_color=0d1117&color=00ff41&line=00cc33&point=00ff41&area=true&area_color=002b00&hide_border=true&custom_title=Contribution%20Graph" alt="Contribution Graph"/>
+
+<br/><br/>
+
+<!-- Streak card — confirmed working in your screenshots -->
+<img src="https://streak-stats.demolab.com?user=Mohameddek1&hide_border=true&background=0D1117&ring=00ff41&fire=00cc33&currStreakLabel=00ff41&sideNums=00ff41&sideLabels=4ade80&dates=4ade80" alt="GitHub Streak"/>
+
+</div>
 
 ---
 
