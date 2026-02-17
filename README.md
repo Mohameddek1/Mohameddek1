@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00ff41&height=200&section=header&text=Mohameddeq%20Abdi&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Cybersecurity%20Engineer%20%7C%20Backend%20Developer&descAlignY=58&descColor=00ff41&descSize=18&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117,00ff41&height=200&section=header&text=Mohameddeq%20Abdi&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Cybersecurity%20Engineer%20%7C%20Backend%20Developer&descAlignY=58&descColor=00ff41&descSize=18&animation=fadeIn" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&pause=900&color=00FF41&center=true&vCenter=true&width=640&lines=🛡️+Security+Engineer+%7C+SOC+%26+Network+Security;⚙️+Backend+Developer+%7C+Django+%26+Flask;🔵+Blue+Team+%7C+Threat+Detection+%26+Forensics;🐍+Python+%7C+REST+APIs+%7C+Secure+Backends;🔴+CTF+Player+%7C+HackTheBox+%26+TryHackMe;💡+Break+it.+Understand+it.+Secure+it." alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&pause=900&color=00FF41&center=true&vCenter=true&width=640&lines=Security+Engineer+%7C+SOC+%26+Network+Security;Backend+Developer+%7C+Django+%26+Flask;Blue+Team+%7C+Threat+Detection+%26+Forensics;Python+%7C+REST+APIs+%7C+Secure+Backends;CTF+Player+%7C+HackTheBox+%26+TryHackMe;Break+it.+Understand+it.+Secure+it." alt="Typing SVG"/>
 
 <br/>
 
@@ -23,8 +23,6 @@
 </div>
 
 ---
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00ff41&height=2" width="100%"/>
 
 ## `$ whoami`
 
@@ -58,8 +56,6 @@ class Mohameddeq:
 
     mindset = "Break it to understand it. Understand it to build it better. 🔐"
 ```
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00ff41&height=2" width="100%"/>
 
 ---
 
@@ -285,6 +281,6 @@ Logs     →  Structured · SIEM-piped
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00ff41&height=120&section=footer&text=Build.%20Break.%20Detect.%20Repeat.&fontSize=24&fontColor=ffffff&fontAlignY=65&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117,00ff41&height=120&section=footer&text=Build.%20Break.%20Detect.%20Repeat.&fontSize=24&fontColor=00ff41&fontAlignY=65&animation=fadeIn" width="100%"/>
 
 </div>
