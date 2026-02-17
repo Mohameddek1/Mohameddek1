@@ -9,17 +9,18 @@
 ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═════╝ ╚═════╝ ╚══════╝ ╚══▀▀═╝
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&pause=1200&color=00FF41&center=true&vCenter=true&width=560&lines=Backend+Developer+%7C+Django+%26+Flask;Security+Engineer+%7C+SOC+%26+Network+Security;CTF+Player+%7C+HackTheBox+%26+TryHackMe;Break+it.+Understand+it.+Secure+it." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&pause=1200&color=00FF41&center=true&vCenter=true&width=580&lines=Backend+Developer+%7C+Django+%26+Flask;Security+Engineer+%7C+SOC+%26+Network+Security;915%2B+Contributions+in+the+Last+Year;Building+things.+Breaking+things.+Securing+things." alt="Typing SVG" />
 
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohameddeq-abdi-a08a18262)
 [![Email](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohadek2004@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohameddeq)
+[![GitHub @Mohameddek1](https://img.shields.io/badge/GitHub-Mohameddek1-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohameddek1)
+[![GitHub @Mohameddeq](https://img.shields.io/badge/GitHub-Mohameddeq-444444?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohameddeq)
 [![HackTheBox](https://img.shields.io/badge/HackTheBox-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/)
 
-<img src="https://komarev.com/ghpvc/?username=Mohameddeq&color=00ff41&style=flat-square&label=PROFILE+VIEWS"/>
+<img src="https://komarev.com/ghpvc/?username=Mohameddek1&color=00ff41&style=flat-square&label=PROFILE+VIEWS"/>
 
 </div>
 
@@ -31,13 +32,14 @@
 class Mohameddeq:
     name       = "Mohameddeq Abdi"
     email      = "mohadek2004@gmail.com"
-    primary    = ["Backend Developer",  "Security Engineer"]
+    github     = ["@Mohameddek1 (primary)", "@Mohameddeq"]
+    primary    = ["Backend Developer", "Security Engineer"]
 
     backend    = {
         "frameworks" : ["Django", "Django REST Framework", "Flask"],
         "languages"  : ["Python", "JavaScript"],
         "databases"  : ["PostgreSQL", "Redis", "SQLite"],
-        "extras"     : ["Celery", "JWT Auth", "REST APIs"],
+        "extras"     : ["Celery", "JWT Auth", "REST APIs", "Docker"],
     }
     security   = {
         "focus"  : ["SOC Operations", "Network Security", "Threat Hunting"],
@@ -88,38 +90,36 @@ class Mohameddeq:
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                                                                         │
-│   Django                          Flask                                 │
-│   ──────────────────────────      ──────────────────────────            │
-│   ✓ Full REST APIs with DRF       ✓ Lightweight microservices           │
-│   ✓ JWT + Session authentication  ✓ Custom security tooling             │
-│   ✓ Multi-tenant applications     ✓ Internal dashboards & APIs          │
-│   ✓ Celery background workers     ✓ Rapid prototyping                   │
-│   ✓ ORM query optimization        ✓ Webhook handlers                    │
-│   ✓ OWASP-aware secure coding     ✓ CTF challenge backends              │
+│   Django                           Flask                                │
+│   ───────────────────────────      ──────────────────────────           │
+│   ✓ Full REST APIs with DRF        ✓ Lightweight microservices          │
+│   ✓ JWT + Session authentication   ✓ Custom security tooling            │
+│   ✓ Multi-tenant applications      ✓ Internal dashboards & APIs         │
+│   ✓ Celery background workers      ✓ Rapid prototyping                  │
+│   ✓ ORM query optimization         ✓ Webhook handlers                   │
+│   ✓ OWASP-aware secure coding      ✓ CTF challenge backends             │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Security I bake into every backend
+### Security baked into every backend
 
 ```
-  Input Validation     →   Sanitize all inputs, parameterized queries (no SQLi)
-  Authentication       →   JWT with refresh rotation, rate limiting, 2FA-ready
-  Authorization        →   Role-based access control, object-level permissions
-  Data Protection      →   Hashed passwords (bcrypt), encrypted sensitive fields
-  API Hardening        →   CORS policy, CSRF protection, secure headers
-  Logging & Auditing   →   Structured logs, audit trails, anomaly alerting
+  Input Validation   →   Sanitized inputs, parameterized queries — zero SQLi
+  Authentication     →   JWT with refresh rotation, rate limiting, 2FA-ready
+  Authorization      →   RBAC, object-level permissions, principle of least privilege
+  Data Protection    →   bcrypt password hashing, encrypted sensitive fields
+  API Hardening      →   CORS policy, CSRF protection, secure headers (CSP, HSTS)
+  Logging & Auditing →   Structured logs, audit trails, anomaly alerting hooks
 ```
 
 ---
 
 ## 🛡️ Cybersecurity
 
-> I approach security from both sides — building detection systems as a blue teamer and thinking offensively to understand real attack paths.
+> Blue team by focus, offensive by mindset. I build detection systems and think like an attacker to understand real threat paths.
 
-### 🔵 Blue Team — SOC & Threat Detection
-
-> My primary security focus: monitoring, detecting, and responding to threats in real time.
+### 🔵 SOC & Threat Detection
 
 <div align="center">
 
@@ -132,17 +132,13 @@ class Mohameddeq:
 </div>
 
 ```
-  Splunk / Elastic   →  SPL & KQL queries, custom dashboards, detection rules
-  Wazuh              →  Agent deployment, FIM, active response rules
-  TheHive / Cortex   →  Incident case management, automated enrichment
-  Graylog            →  Log aggregation, stream filtering, alert pipelines
+  Splunk / Elastic   →   SPL & KQL queries, dashboards, correlation rules
+  Wazuh              →   Agent deployment, FIM, active response
+  TheHive / Cortex   →   Case management, automated enrichment workflows
+  Graylog            →   Log aggregation, stream filtering, alert pipelines
 ```
 
----
-
 ### 🌐 Network Security & Forensics
-
-> Analyzing traffic at the packet level — building detection and catching anomalies before they escalate.
 
 <div align="center">
 
@@ -156,17 +152,13 @@ class Mohameddeq:
 </div>
 
 ```
-  Wireshark / tcpdump  →  Deep PCAP analysis, protocol dissection, IOC extraction
-  Zeek                 →  Behavioural network monitoring, custom scripts
-  Suricata / Snort     →  Custom IDS/IPS rules, encrypted traffic analysis
-  Nmap                 →  Network discovery, service fingerprinting, vuln scanning
+  Wireshark / tcpdump  →   Deep PCAP analysis, protocol dissection, IOC extraction
+  Zeek                 →   Behavioural monitoring, custom detection scripts
+  Suricata / Snort     →   Custom IDS/IPS rules, encrypted traffic analysis
+  Nmap                 →   Network discovery, service fingerprinting
 ```
 
----
-
-### 🔴 Offensive Security & CTF
-
-> Practicing on HackTheBox and TryHackMe — understanding attack techniques to build better defenses.
+### 🔴 Offensive & CTF
 
 <div align="center">
 
@@ -175,7 +167,6 @@ class Mohameddeq:
 ![Nessus](https://img.shields.io/badge/Nessus-00C1D4?style=for-the-badge&logo=tenable&logoColor=white)
 ![OpenVAS](https://img.shields.io/badge/OpenVAS-56A902?style=for-the-badge&logo=openvas&logoColor=white)
 ![Gobuster](https://img.shields.io/badge/Gobuster-222222?style=for-the-badge&logo=linux&logoColor=white)
-![Nikto](https://img.shields.io/badge/Nikto-333333?style=for-the-badge&logo=linux&logoColor=white)
 
 </div>
 
@@ -187,8 +178,6 @@ class Mohameddeq:
 ---
 
 ## 🚀 DevOps — Supporting the Stack
-
-> I use DevOps tools to ship and maintain what I build — containers, automation, and pipelines.
 
 <div align="center">
 
@@ -208,6 +197,28 @@ class Mohameddeq:
 
 ---
 
+## 📊 GitHub Stats
+
+<!-- ⚠️ Stats are pulled from @Mohameddek1 — the active primary account with 915+ contributions -->
+
+<div align="center">
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohameddek1&bg_color=0d1117&color=00ff41&line=00cc33&point=00ff41&area=true&area_color=002b00&hide_border=true&custom_title=Contribution%20Activity%20%E2%80%94%20915%2B%20contributions%20in%20the%20last%20year" alt="Activity Graph"/>
+
+<br/><br/>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Mohameddek1&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=00ff41&icon_color=00ff41&text_color=c8f0c8&ring_color=00ff41" alt="GitHub Stats"/>
+&nbsp;
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohameddek1&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=00ff41&text_color=c8f0c8" alt="Top Languages"/>
+
+<br/><br/>
+
+<img src="https://streak-stats.demolab.com?user=Mohameddek1&hide_border=true&background=0D1117&ring=00ff41&fire=00cc33&currStreakLabel=00ff41&sideNums=00ff41&sideLabels=4ade80&dates=4ade80" alt="GitHub Streak"/>
+
+</div>
+
+---
+
 ## 📦 Full Toolbox
 
 | Category | Tools |
@@ -222,26 +233,6 @@ class Mohameddeq:
 | ⚙️ **IaC** | Terraform · Ansible |
 | 🔄 **CI/CD** | GitHub Actions |
 | 🖥️ **OS / Shell** | Kali Linux · Ubuntu · Bash |
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mohameddeq&bg_color=0d1117&color=00ff41&line=00cc33&point=00ff41&area=true&area_color=002b00&hide_border=true&custom_title=Contribution%20Activity" alt="Activity Graph"/>
-
-<br/><br/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Mohameddeq&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=00ff41&icon_color=00ff41&text_color=c8f0c8&ring_color=00ff41" alt="Stats"/>
-&nbsp;
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohameddeq&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=00ff41&text_color=c8f0c8" alt="Languages"/>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=Mohameddeq&hide_border=true&background=0D1117&ring=00ff41&fire=00cc33&currStreakLabel=00ff41&sideNums=00ff41&sideLabels=4ade80&dates=4ade80" alt="Streak"/>
-
-</div>
 
 ---
 
